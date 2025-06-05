@@ -1,0 +1,9 @@
+services:
+  spring-ai-poc-application:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spring-ai-poc-application
+    restart: on-failure
+    ports:
+      - "8080:8080"
